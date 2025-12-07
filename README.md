@@ -1,10 +1,10 @@
-# 🧠 Smart AI Question Generator (Llama-3 Fine-Tuned)
+# Smart AI Question Generator (Llama-3 Fine-Tuned)
 
 An end-to-end Machine Learning system that generates intelligent questions (MCQs, True/False, Short Answer) from any PDF, Word document, or raw text. 
 
 This project uses **Llama-3-8B** fine-tuned on a custom balanced QA dataset. It employs **RAG (Retrieval-Augmented Generation)** techniques to handle long documents and ensures diverse, non-repetitive question generation via "Smart Chunking."
 
-## 🚀 Key Features
+## Key Features
 
 - **Document Parsing:** Supports PDF (`.pdf`), Word (`.docx`), and plain text (`.txt`).
 - **Fine-Tuned Llama-3:** Uses `unsloth/llama-3-8b-Instruct-bnb-4bit` as the base, fine-tuned with LoRA adapters for specific instruction following.
@@ -15,7 +15,7 @@ This project uses **Llama-3-8B** fine-tuned on a custom balanced QA dataset. It 
   - **Control:** Choose the exact number of questions generated.
 - **Interactive UI:** A user-friendly web interface built with **Gradio**.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Model:** Llama-3-8B (Unsloth, 4-bit Quantization)
 - **Fine-Tuning:** PEFT (LoRA), Hugging Face Transformers, TRL
@@ -23,13 +23,13 @@ This project uses **Llama-3-8B** fine-tuned on a custom balanced QA dataset. It 
 - **Interface:** Gradio
 - **Infrastructure:** Google Colab (T4 GPU supported)
 
-## 📂 Project Structure
+## Project Structure
 
 - `notebooks/`: Contains the Google Colab notebook for training and inference.
 - `data/`: The balanced dataset used for fine-tuning.
 - `model_adapter/`: The saved PEFT/LoRA adapter weights and tokenizer configurations.
 
-## 💻 Installation & Usage
+## Installation & Usage
 
 ### Option 1: Run in Google Colab (Recommended)
 Since this project uses a large Language Model (8B params), it requires a GPU. The easiest way to run it is via Google Colab.
